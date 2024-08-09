@@ -40,3 +40,7 @@ Route::get('/user/{name}', function ($name) {
 Route::get('/posts/{post}/{commit}', function ($post, $comment) {
     return 'Pos ke-' . $post . " Komentar ke-: " . $comment;
 });
+
+Route::get('/user/{name?}', function ($name=null) {
+    return 'Nama saya ' . $name;
+});
