@@ -44,3 +44,7 @@ Route::get('/posts/{post}/{commit}', function ($post, $comment) {
 Route::get('/user/{name?}', function ($name=null) {
     return 'Nama saya ' . $name;
 });
+
+Route::get('/kodebarang/{jenis?}', function ($jk='k01', $mrk='nokia') {
+    return 'Kode barang ' . $jk . ' dan nama barang ' . $mrk;
+});
