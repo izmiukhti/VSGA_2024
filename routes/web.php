@@ -103,4 +103,9 @@ Route::resource('photos', PhotoController::class)->except([
     'destroy'
 ]);
 
+Route::get('/selamat', function () {
+    return view('hello',['name'=>'dino']);
+});
+
+
 ?>
