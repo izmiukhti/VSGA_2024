@@ -5,6 +5,7 @@ use App\Http\Controllers\PageControllerSatu;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pengajarController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\welcomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -107,5 +108,9 @@ Route::get('/selamat', function () {
     return view('hello',['name'=>'dino']);
 });
 
+Route::get('/greeting', [
+    welcomeController::class,
+    'greeting'
+]);
 
 ?>
