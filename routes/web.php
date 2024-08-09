@@ -74,3 +74,7 @@ Route::prefix('/admin')->group(function () {
     });
 });
 
+Route::fallback(function() {
+    return "maaf alamat ini tidak ditemukan";
+});
+
