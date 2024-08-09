@@ -32,3 +32,11 @@ Route::get('/welcome', function () {
 Route::get('/about', function () {
     return 'NIM : 2231740046';
 });
+
+Route::get('/user/{name}', function ($name) {
+    return 'Nama saya ' . $name;
+});
+
+Route::get('/posts/{post}/{commit}', function ($post, $comment) {
+    return 'Pos ke-' . $post . " Komentar ke-: " . $comment;
+});
