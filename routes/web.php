@@ -62,12 +62,15 @@ Route::get('/pesandisini', function () {
 });
 Route::redirect('/contact-us', '/pesandisini');
 
-Route::get('/polinema/dosen', function () {
-    return "<h1> daftar nama dosen </h1>";
+Route::prefix('/admin')->group(function () {
+    Route::get('/dosen', function () {
+        echo "<h1> daftar nama dosen </h1>";
+    });
+    Route::get('/tendik', function () {
+        echo "<h1> daftar nama tendik </h1>";
+    });
+    Route::get('/jurusan', function () {
+        echo "<h1> daftar nama jurusan </h1>";
+    });
 });
-Route::get('/polinema/tendik', function () {
-    return "<h1> daftar nama tendik </h1>";
-});
-Route::get('/polinema/jurusan', function () {
-    return "<h1> daftar nama jurusan </h1>";
-});
+
