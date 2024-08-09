@@ -56,3 +56,8 @@ Route::get('about', function () {
 Route::get('tampil', function () {
     return view('tampil');
 })->name('tampil');
+
+Route::get('/pesandisini', function () {
+    return '<h1> pesan disini </h1>';
+});
+Route::redirect('/contact-us', '/pesandisini');
