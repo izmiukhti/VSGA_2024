@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CRUDController;
+use App\Http\Controllers\halloController;
 use App\Http\Controllers\PageControllerSatu;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pengajarController;
@@ -110,6 +111,11 @@ Route::get('/selamat', function () {
 
 Route::get('/greeting', [
     WelcomeController::class,
+    'greeting'
+]);
+
+Route::get('/heloow', [
+    halloController::class,
     'greeting'
 ]);
 

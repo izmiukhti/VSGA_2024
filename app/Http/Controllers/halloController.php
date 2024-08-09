@@ -11,9 +11,9 @@ class halloController extends Controller
         return ('Hello World');
     }
 
-    public function greeting()
+    public function heloow()
     {
-        return view('blog.hello')
+        return view('blog.hellow')
         ->with('name', 'izmi')
         ->with('pekerjaan', 'dosen');
     }
