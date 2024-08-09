@@ -114,7 +114,7 @@ Route::get('/greeting', [
     'greeting'
 ]);
 
-Route::get('/heloow', [
+Route::get('/greeting', [
     halloController::class,
     'greeting'
 ]);

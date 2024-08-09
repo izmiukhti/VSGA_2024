@@ -11,7 +11,7 @@ class halloController extends Controller
         return ('Hello World');
     }
 
-    public function heloow()
+    public function greeting()
     {
         return view('blog.hellow')
         ->with('name', 'izmi')
