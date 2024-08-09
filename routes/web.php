@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/hello', function () {
+    return 'hello VSGA';
+});
+
+Route::get('/word', function () {
+    return 'hello Dunia';
+});
+
+Route::get('/welcome', function () {
+    return 'Selamat Datang';
+});
+
+Route::get('/about', function () {
+    return 'NIM : 2231740046';
+});

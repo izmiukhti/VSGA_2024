@@ -8,6 +8,6 @@
     </head>
     <body>
         <h2>ini percobaan</h2>
-        <h3>semangat belajar</h3>
+        <h3>semangan belajar</h3>
     </body>
 </html>
