@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\pengajarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,3 +79,8 @@ Route::fallback(function() {
     return "maaf alamat ini tidak ditemukan";
 });
 
+Route::get('/daftar-dosen',[pengajarController::class,'daftarPengajar']);
+Route::get('/tabel-pengajar',[pengajarController::class,'tabelPengajar']);
+Route::get('/blog-pengajar',[pengajarController::class,'blogPengajar']);
+
+?>

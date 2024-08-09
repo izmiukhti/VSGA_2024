@@ -20,4 +20,7 @@ class pengajarController extends Controller
     {
         return 'Halaman blog mahasiswa';
     }
+
 }
+?>
+
