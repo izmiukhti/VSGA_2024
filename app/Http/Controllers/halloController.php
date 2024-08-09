@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class halloController extends Controller
 {
     public function hello()
     {
@@ -13,7 +13,9 @@ class WelcomeController extends Controller
 
     public function greeting()
     {
-        return view('blog.hello', ['name' => 'Izmi']);
+        return view('blog.hello')
+        ->with('name', 'izmi')
+        ->with('pekerjaan', 'dosen');
     }
 }
 ?>

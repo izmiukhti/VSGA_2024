@@ -109,7 +109,7 @@ Route::get('/selamat', function () {
 });
 
 Route::get('/greeting', [
-    welcomeController::class,
+    WelcomeController::class,
     'greeting'
 ]);
 
