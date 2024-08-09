@@ -48,3 +48,11 @@ Route::get('/user/{name?}', function ($name=null) {
 Route::get('/kodebarang/{jenis?}', function ($jk='k01', $mrk='nokia') {
     return 'Kode barang ' . $jk . ' dan nama barang ' . $mrk;
 });
+
+Route::get('about', function () {
+    return view('about');
+})->name('about');
+
+Route::get('tampil', function () {
+    return view('tampil');
+})->name('tampil');
